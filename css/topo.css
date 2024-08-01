@@ -7,7 +7,7 @@
     width: 100%;
 
     /** Posiciona o elemento em relação ao corpo da página **/
-    height: 137px;
+    height: 180px;
 
     /** Margem interna **/
     padding-top: 10px;
@@ -23,14 +23,15 @@
     width: 525px;
 
     /** Altura capaz de armazenar logo e título **/    
-    height: 100px;
+    height: 100;
 
     /** Posicionamento relativo para não encavalar com as outras DIVs **/
     position: relative;
 
     /** Centraliza a DIV **/
-    left: 50%;
-    margin-left: -312px;
+    text-align: center;
+    margin: auto;
+    
 }
 
 
@@ -40,21 +41,27 @@
 #logoImg {
 
     /** Tamanho **/
-    width: 80px;
-    height: 100px;
+    width: 200px;
+    height: 100%;
 
     /** Posição do logo **/
-    float: left;
-    margin-right: 10px;
+    float: Center;
+    margin-top: 5px;
+    
+}
+
+@font-face {
+    font-family: kalheo;
+    src: url(../fonts/Kalheo.ttf);
 }
 
 #tituloLogo {
     
     /** Posição **/
-    float: right;
+    float: center;
 
     /** Cor do texto **/
-    color: rgb(44, 30, 28);
+    color: rgb(169, 5, 234);
 
     /***   sombra no titulo   ****/
     text-shadow: 2px 2px 4px rebeccapurple;
@@ -63,8 +70,10 @@
     line-height: 100px;
 
     /** Sem margem**/
-    margin: 0;
+    margin: auto;
 
     /** Tamanho da fonte **/
-    font-size: 46px;
+    font-size: 28px;
+    font-family: kalheo;
+    letter-spacing: 4px;
 }

@@ -7,10 +7,32 @@
     width: 700px;
     
     /** Cor de fundo da div principal **/
-    background-color: #201e1e;
+    background-color: rgba(17, 16, 16, 0.8);
 
     /** Posicionando os elementos **/
     position: relative;
     left: 50%;
     margin-left: -380px;
+    margin-top: 10px;
+
+    --angle: 0deg;
+	border: 0.4rem solid;
+	border-image: conic-gradient(from var(--angle), rgb(165, 5, 197), rgb(209, 135, 197), rgb(60, 4, 211), rgb(19, 84, 224), rgb(207, 81, 186)) 1;
+    border-radius: 10px;
+	
+	animation: 10s rotate linear infinite;
+
+
 }
+
+@keyframes rotate {
+	to {
+		--angle: 360deg;
+	}
+}
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+  }

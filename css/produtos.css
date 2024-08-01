@@ -1,5 +1,14 @@
 /** Configuração da DIV com id tituloConteudo
 **************************************************************************************/
+@font-face {
+    font-family: astro;
+    src: url(../fonts/as.ttf);
+}
+
+@font-face {
+    font-family: beckman;
+    src: url(../fonts/Beckman-FREE.ttf);
+}
 
 #tituloConteudo {
     /** Define a cor **/
@@ -7,6 +16,7 @@
         
     /** Alinha ao centro **/
     text-align: center;
+    font-family: beckman;
     
     /** Reduz a margem inferior **/
     margin-bottom: 10px;
@@ -38,7 +48,8 @@
     color: rgb(223, 213, 211);
 
     /** Tamanho de fonte   **/
-    font-size: 20px;
+    font-size: 16px;
+    font-family: astro;
 }
 
 
@@ -61,7 +72,19 @@
     border: 3px solid rgb(116, 20, 135);
 }
 
-#areaProdutos td img{
+#areaProdutos td img {
+    transition: transform 0.1s ease-in-out;
+}
+
+#areaProdutos td img:hover{
+    transform: scale(1.1);
+
+	border: 3px solid transparent;
+	/**/border-image: conic-gradient(from var(--angle), rgb(165, 5, 197), rgb(209, 135, 197), rgb(60, 4, 211), rgb(19, 84, 224), rgb(207, 81, 186)) 1;
+    border-radius: 30%;
+    background: linear-gradient(90deg, rgb(165, 5, 197),  rgb(60, 4, 211));
+
+
 
 }
 

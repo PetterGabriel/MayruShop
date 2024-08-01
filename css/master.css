@@ -4,7 +4,9 @@
 body {
 
     /** Muda a cor do fundo da página **/
-    background-color: rgb(173, 173, 173);
+    background-image: url("../imagens/background.jpg");
+    background-repeat: no-repeat;
+    background-size: fill;
 
     /** Fonte **/
     font-family: Candara, Helvetica, sans-serif; 

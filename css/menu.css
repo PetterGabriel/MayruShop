@@ -1,6 +1,11 @@
 /** Configuração da DIV do menu principal id = "menu" 
 **************************************************************************************/
 
+@font-face {
+    font-family: beckman;
+    src: url(../fonts/Beckman-FREE.ttf);
+}
+
 #menu {
 
     /** Tamanho **/
@@ -8,7 +13,7 @@
 	height: 30px;
 
     /** Cor do fundo **/
-    background-color: rgb(75, 20, 137);
+    background-color: rgba(75, 20, 137, 0.559);
 }
 
 
@@ -24,7 +29,7 @@
     position: relative;
     left: 50%;
     margin-left: -320px;
-    margin-top: 7px;
+    margin-top: 0px;
 }
 
 
